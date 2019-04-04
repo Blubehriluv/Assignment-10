@@ -3,10 +3,9 @@
 
 using namespace std;
 
-int main()
+/*
+void example()
 {
-	cout << "Whassup" << endl;
-
 	int age = 21;
 
 	//V makes a pointer & means the address
@@ -18,4 +17,11 @@ int main()
 	cout << "Let's see the pointer's value's true format: " << pAge << "." << endl;
 
 	system("pause");
+}*/
+
+int main()
+{
+	cout << "\n\n\tWelcome" << endl;
+	system("pause");
+
 }
