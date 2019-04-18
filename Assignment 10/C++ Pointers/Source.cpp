@@ -3,6 +3,11 @@
 
 using namespace std;
 
+string userName;
+string passWord;
+string* alt_Username = &userName;
+string* alt_Password = &passWord;
+
 /*
 void example()
 {
@@ -18,10 +23,50 @@ void example()
 
 	system("pause");
 }*/
+void pause()
+{
+	system("Pause");
+}
+
+void threeSpace()
+{
+	cout << "\n\n\n";
+}
+
+void twoSpace()
+{
+	cout << "\n\n";
+}
+
+void signIn()
+{
+	
+}
+
+void accountRegister()
+{
+	cout << "\n\nPlease register an account." << endl;
+	pause();
+	twoSpace();
+	cout << "Please enter a Username: ";
+	cin >> userName;
+	cout << "\nPlease enter a Password: ";
+	cin >> passWord;
+}
 
 int main()
 {
-	cout << "\n\n\tWelcome" << endl;
-	system("pause");
+	cout << "\n\n\tUA&T Bank" << endl;
+	cout << "Welcome to the UA&T Bank transfer site." << endl;
+	pause();
+	twoSpace();
+	
+	accountRegister();
+	threeSpace();
+
+	signIn();
+	
+	
+	pause();
 
 }
