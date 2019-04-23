@@ -1,3 +1,4 @@
 ﻿  Source1.cpp
-c:\users\taymcken\documents\github\assignment-10\assignment 10\c++ pointers\source1.cpp(85): warning C4326: return type of 'main' should be 'int' instead of 'void'
+c:\users\taymcken\documents\github\assignment-10\assignment 10\c++ pointers\source1.cpp(127): warning C4551: function call missing argument list
+c:\users\taymcken\documents\github\assignment-10\assignment 10\c++ pointers\source1.cpp(198): warning C4326: return type of 'main' should be 'int' instead of 'void'
   C++ Pointers.vcxproj -> C:\Users\taymcken\Documents\GitHub\Assignment-10\Assignment 10\x64\Debug\C++ Pointers.exe

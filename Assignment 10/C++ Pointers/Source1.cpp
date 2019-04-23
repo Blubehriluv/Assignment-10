@@ -8,6 +8,9 @@ string loginChoice;
 string* bankInfo;
 int* currentMoney;
 int chosenAction;
+int* rich_Money;
+int depositAmnt;
+int myMoney;
 
 void pause()
 {
@@ -23,12 +26,37 @@ void twoSpace()
 }
 
 
+void deposit()
+{
+	cout << "How much would you like to deposit?" << endl;
+	cin >> depositAmnt;
+	cout << "Validating..." << endl;
+	*currentMoney = *currentMoney + depositAmnt;
+	cout << "Amount has been deposited." << endl;
+	cout << "Your new balance is:" << *currentMoney;
+	cout << "MyMoney is: " << myMoney;
+}
+
+void withdraw()
+{
+	
+}
+
+void sendMoney()
+{
+	
+}
+
+void deleteAcct()
+{
+	
+}
+
 void welcomeBack()
 {
 	cout << "Welcome back " << loginChoice << "! :)" << endl;
 	cout << "Please enter the number of your next action." << endl;
 }
-
 
 void chooseAction()
 {
@@ -38,23 +66,25 @@ void chooseAction()
 
 	if (chosenAction == 1)
 	{
-		cout;
+		cout << "Current balance: " << *currentMoney << endl;
+		pause();
+		chooseAction();
 	}
 	if (chosenAction == 2)
 	{
-
+		deposit();
 	}
 	if (chosenAction == 3)
 	{
-		
+		withdraw();
 	}
 	if (chosenAction == 4)
 	{
-		
+		sendMoney();
 	}
 	if (chosenAction == 5)
 	{
-		
+		deleteAcct();
 	}
 	else
 	{
@@ -78,33 +108,45 @@ void accountActions()
 
 void richAccount()
 {
+	int richMoney = 6900000;
+	currentMoney = &richMoney;
+	
 	welcomeBack();
 	accountActions();
 	chooseAction();
 	pause();
-	int richMoney = 6900000;
-	string richBI = "Current balance: $6,900,000.";
-	int* rich_Money = &richMoney;
 }
 
 void playerAccount()
 {
+	myMoney = 25;
+	currentMoney = &myMoney;
+
 	welcomeBack();
 	accountActions();
+	chooseAction;
 	pause();
 }
 
 void yonceAccount()
 {
+	int richMoney = 4599;
+	currentMoney = &richMoney;
+
 	welcomeBack();
 	accountActions();
+	chooseAction();
 	pause();
 }
 
 void margAccount()
 {
+	int richMoney = 125;
+	currentMoney = &richMoney;
+
 	welcomeBack();
 	accountActions();
+	chooseAction();
 	pause();
 }
 
@@ -139,7 +181,7 @@ void chooseAccount()
 		twoSpace();
 		playerAccount();
 	}
-	if (loginChoice == "RichBoy123")
+	if (loginChoice == "RichBoy1992")
 	{
 		twoSpace();
 		richAccount();
